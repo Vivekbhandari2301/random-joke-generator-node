@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Joke Generator 😂</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>😂 Random Joke Generator</h1>
+
+    <% if (joke) { %>
+      <div class="joke-box">
+        <p><%= joke %></p>
+      </div>
+    <% } %>
+
+    <% if (error) { %>
+      <div class="error-box">
+        <p><%= error %></p>
+      </div>
+    <% } %>
+
+    <form action="/" method="GET">
+      <button class="btn">Get New Joke</button>
+    </form>
+  </div>
+
+</body>
+</html>
